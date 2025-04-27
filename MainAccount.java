@@ -1,6 +1,5 @@
 package com.brigdgelabz.bankingsystem;
 
-
 import java.util.Scanner;
 
 // AccountTest class to test the debit method
@@ -21,26 +20,10 @@ import java.util.Scanner;
         double withdrawAmount= scanner.nextDouble();
         myAccount.debit(withdrawAmount);
 
-
-        // Test unsuccessful withdrawal
-        System.out.println("Enter amount more that current balance to withdraw ");
-        withdrawAmount= scanner.nextDouble();
-        myAccount.debit(withdrawAmount);
-
-
         //Test successful deposit
         System.out.println("Enter amount to debit");
         double  debitAmount=scanner.nextDouble();
         myAccount.deposit(debitAmount);
-
-
-
-        //Test unsuccessful deposit
-        System.out.println("Enter amount negative or zero to debit");
-        debitAmount=scanner.nextDouble();
-        myAccount.deposit(debitAmount);
-
-
     }
 }
 
