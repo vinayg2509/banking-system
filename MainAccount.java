@@ -15,12 +15,12 @@ import java.util.Scanner;
         // Display the current balance
         System.out.println("Initial balance: Rs" + myAccount.getBalance());
 
-        // Test successful withdrawal
+        // Test withdrawal
         System.out.println("Enter amount to withdraw");
         double withdrawAmount= scanner.nextDouble();
         myAccount.debit(withdrawAmount);
 
-        //Test successful deposit
+        //Test deposit
         System.out.println("Enter amount to debit");
         double  debitAmount=scanner.nextDouble();
         myAccount.deposit(debitAmount);
